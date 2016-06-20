@@ -19,7 +19,7 @@
 			</div> <!-- end .inner-wrap -->
 		</div> <!-- end .off-canvas-wrap -->
 			
-			<?php get_template_part('parts/content', 'modal'); ?>	
+			<?php get_template_part('partials/content', 'modal'); ?>	
 			<!-- all js scripts are loaded in library/core-functions.php -->
 			<?php wp_footer(); ?>
 	</body>
