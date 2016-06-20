@@ -120,42 +120,38 @@ function lierphotography_scripts_and_styles() {
     wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/foundation/js/vendor/modernizr.js', array(), '2.5.3', false );
     
     // adding Foundation scripts file in the footer
-    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '
-    /foundation/js/foundation.min.js', array( 'jquery' ), $theme_version, true );
+    wp_enqueue_script( 'lierphotography-foundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), $theme_version, true );
    
     // adding galleriffic scripts file in the footer
-    wp_enqueue_script( 'galleriffic-js', get_stylesheet_directory_uri() . '/library/js/jquery.galleriffic.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'lierphotography-galleriffic-js', get_stylesheet_directory_uri() . '/library/js/jquery.galleriffic.js', array( 'jquery' ), '', true );
  
     // adding galleriffic opacityrollover js file in the footer
-    wp_enqueue_script( 'opacityrollover-js', get_stylesheet_directory_uri() . '/library/js/jquery.opacityrollover.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'lierphotography-opacityrollover-js', get_stylesheet_directory_uri() . '/library/js/jquery.opacityrollover.js', array( 'jquery' ), '', true );
 
     // register foundation stylesheet
-	wp_enqueue_style( 'foundation-stylesheet', get_stylesheet_directory_uri() . '/foundation/css/foundation.css', array(), '', 'all' );
+	wp_enqueue_style( 'lierphotography-foundation-stylesheet', get_stylesheet_directory_uri() . '/foundation/css/foundation.css', array(), '', 'all' );
 
 // register normalize stylesheet
-	wp_enqueue_style( 'normalize-stylesheet', get_stylesheet_directory_uri() . '/foundation/css/normalize.css', array(), '', 'all' );
+	wp_enqueue_style( 'lierphotography-normalize-stylesheet', get_stylesheet_directory_uri() . '/foundation/css/normalize.css', array(), '', 'all' );
 
     // register main stylesheet
     wp_enqueue_style( 'lierphotography-stylesheet', get_template_directory_uri() . '/library/css/style.css', array(), $theme_version, 'all' );
     
-    // register foundation icons
-    // wp_enqueue_style( 'foundation-icons', get_template_directory_uri() . '/library/css/icons/foundation-icons.css', array(), $theme_version, 'all' );
-
     // register main stylesheet 
-	wp_enqueue_style( 'mystyles-css', get_stylesheet_directory_uri() . '/library/css/mystyles.css', array(),'', 'all' );
+	wp_enqueue_style( 'lierphotography-mystyles-css', get_stylesheet_directory_uri() . '/library/css/mystyles.css', array(),'', 'all' );
 
 	// register font awesome stylesheet
-	wp_enqueue_style( 'font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'lierphotography-font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
 
     //Add google fonts
-    wp_enqueue_style( 'lierphoto-google-fonts', 'https://fonts.googleapis.com/css?family=Droid+Sans');
+    wp_enqueue_style( 'lierphotography-google-fonts', 'https://fonts.googleapis.com/css?family=Droid+Sans');
 
     // load HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-    wp_enqueue_script( 'lierphoto-htm5shivjs', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js');
-    wp_script_add_data( 'lierphoto-htm5shivjs', 'conditional', 'lt IE 9' );
+    wp_enqueue_script( 'lierphotography-htm5shivjs', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js');
+    wp_script_add_data( 'lierphotography-htm5shivjs', 'conditional', 'lt IE 9' );
 
-    wp_enqueue_script( 'lierphoto-respondjs', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js');
-    wp_script_add_data( 'lierphoto-respondjs', 'conditional', 'lt IE 9' );
+    wp_enqueue_script( 'lierphotography-respondjs', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js');
+    wp_script_add_data( 'lierphotography-respondjs', 'conditional', 'lt IE 9' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
