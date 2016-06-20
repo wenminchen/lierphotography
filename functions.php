@@ -111,7 +111,7 @@ function lierphotography_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
-	/*register_sidebar(array(
+	register_sidebar(array(
 		'id' => 'offcanvas',
 		'name' => __('Offcanvas', 'lierphotography'),
 		'description' => __('The offcanvas sidebar.', 'lierphotography'),
@@ -119,12 +119,12 @@ function lierphotography_register_sidebars() {
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
-	));*/
+	));
 
 	register_sidebar( array(
 		'id'            => 'footer-one',
 		'name'          => __( 'Footer 1', 'lierphotography' ),
-		'description'   => __( 'Widgets in this area are used in the 1st footer column','lierphotography' ),
+		'description'   => __( '1st footer column','lierphotography' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h5 class="widgettitle">',
@@ -134,7 +134,7 @@ function lierphotography_register_sidebars() {
 	register_sidebar( array(
 		'name'          => __( 'Footer 2', 'lierphotography' ),
 		'id'            => 'footer-two',
-		'description'   => __( 'Widgets in this area are used in the 2nd footer column','lierphotography' ),
+		'description'   => __( '2nd footer column','lierphotography' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h5 class="widgettitle">',
@@ -144,7 +144,7 @@ function lierphotography_register_sidebars() {
 	register_sidebar( array(
 		'name'          => __( 'Footer 3', 'lierphotography' ),
 		'id'            => 'footer-three',
-		'description'   => __( 'Widgets in this area are used in the 3rd footer column','lierphotography' ),
+		'description'   => __( '3rd footer column','lierphotography' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h5 class="widgettitle">',

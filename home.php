@@ -2,7 +2,7 @@
 			
 <div id="content">
 
-	<h1 class="hiddenHeader">Main Content</h1>
+	<h1 class="screen-reader-text">Main Content</h1>
 
 	<div id="inner-content" class="row clearfix">
 

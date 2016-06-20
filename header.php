@@ -37,7 +37,7 @@
 			<div class="inner-wrap">
 				<div id="container">
 					<header class="header" role="banner">
-						<h1 class="hiddenHeader">Main Navigation</h1>
+						<h1 class="screen-reader-text">Main Navigation</h1>
 							
 						 <!-- This navs will be applied to the topbar, above all content 
 							  To see additional nav styles, visit the /partials directory -->

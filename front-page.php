@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 			
 <div id="content">
-	<h1 class="hiddenHeader">Main Content</h1>
+	<h1 class="screen-reader-text">Main Content</h1>
 	<?php $image1 = wp_get_attachment_image_src( get_field('slider1') );
   	$image2 = wp_get_attachment_image_src( get_field('slider2') );
   	$image3 = wp_get_attachment_image_src( get_field('slider3') );

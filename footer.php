@@ -1,5 +1,5 @@
 					<footer id="footer" class="footer" role="contentinfo">
-						<h1 class="hiddenHeader">Footer</h1>
+						<h1 class="screen-reader-text">Footer</h1>
 					    <div class="row">
 							<div class="medium-5 columns" id="footer-one">
 							  <?php dynamic_sidebar('footer-one'); ?>
