@@ -1,0 +1,530 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+/*--------------------------------------------------------------
+1.0 - Import google fonts and other less files
+--------------------------------------------------------------*/
+/*
+.rem-mixins-test-class {
+    .font-size(10px);
+    .line-height(20px);
+    .margin(10px);
+    .margin(3em);
+    .margin(10px, 20px);
+    .margin(10px, 20%);
+    .margin(0px , 20px);
+    .margin-top(2%);
+    .margin-top(2px);
+    .padding(10px);
+    .padding(3em);
+    .padding(10px, 20px);
+    .padding(10px, 20%);
+    .padding(3em, 20px)
+}
+*/
+/*--------------------------------------------------------------
+2.0 - variables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.0 - Mixins
+--------------------------------------------------------------*/
+.img-style {
+  border: 2px solid #d4d4d4;
+  margin-right: 16px;
+  margin-right: 1rem;
+  float: left;
+}
+.portfolio-styles {
+  width: 1030px;
+  width: 64.375rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*--------------------------------------------------------------
+4.0 - General styles
+--------------------------------------------------------------*/
+hr {
+  clear: both;
+  border: 1px solid #d4d4d4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #696969;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+h5 {
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+h6 {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+p {
+  color: #7d7d7b;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+a {
+  color: #ff6b00;
+}
+a:hover,
+a:focus {
+  color: #595958;
+}
+.hiddenHeader {
+  display: none !important;
+}
+/*--------------------------------------------------------------
+5.0 - Header
+--------------------------------------------------------------*/
+.top-bar {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+.top-bar .name {
+  color: #ff6b00;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding-left: 64px;
+  padding-left: 4rem;
+}
+@media (max-width: 1100px) {
+  .top-bar .name {
+    padding-left: 16px;
+    padding-left: 1rem;
+  }
+}
+.top-bar-section ul {
+  background-color: #ffffff;
+  padding-right: 64px;
+  padding-right: 4rem;
+}
+@media (max-width: 1100px) {
+  .top-bar-section ul {
+    padding-right: 16px;
+    padding-right: 1rem;
+  }
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: #ffffff;
+  background-repeat: none;
+  background-attachment: none;
+  background-clip: initial;
+  background-origin: initial;
+  background-size: initial;
+  color: #7d7d7b;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background-color: #ffffff;
+  background-repeat: none;
+  background-attachment: none;
+  background-clip: initial;
+  background-origin: initial;
+  background-size: initial;
+  color: #ff6b00;
+}
+.top-bar-section li.active:not(.has-form) a:hover:not(.button),
+.top-bar-section li:not(.has-form) a:hover:not(.button) {
+  background-color: #595958;
+}
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+  background-color: #595958;
+}
+.top-bar-section .has-dropdown > a:after {
+  border-color: #7d7d7b transparent transparent;
+}
+/*off canvas menu styling */
+ul.off-canvas-list li a {
+  display: block;
+  color: #7d7d7b;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+.move-right > .inner-wrap {
+  transform: translate3d(10rem, 0px, 0px);
+}
+.left-off-canvas-menu {
+  width: 160px;
+  width: 10rem;
+}
+/*--------------------------------------------------------------
+6.0 - Main content
+--------------------------------------------------------------*/
+/* portfolio pages styles */
+/*#content_abstract {
+  .portfolio-styles();
+  background:url(../images/abstract-backg.png) no-repeat;
+}
+    
+#content_imagined {
+  .portfolio-styles();
+  background:url(../images/imagined-backg.png) no-repeat;
+}
+
+#content_real {
+  .portfolio-styles();
+  background:url(../images/real-backg.png) no-repeat;
+}*/
+#content img.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content_contact {
+  background: url(../images/contact_img.jpg) no-repeat;
+  width: 960px;
+  width: 60rem;
+  max-width: 100%;
+  height: 615px;
+  height: 38.4375rem;
+  margin: 10px auto;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 0;
+  padding-left: 225px;
+  padding-left: 14.0625rem;
+  padding-right: 0;
+}
+/*portfolio carousel*/
+.gallery {
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+.image-preview img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  padding-bottom: 2rem;
+}
+.elastislide-carousel ul li a img {
+  width: 70%;
+  height: 70%;
+}
+/* form for contact page*/
+label {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #fff;
+  padding-right: 5px;
+  padding-right: 0.3125rem;
+}
+form {
+  border: 1px solid #C33;
+  padding: 13px 23px;
+  padding: 0.8125rem 23px;
+  padding: 13px 1.4375rem;
+  padding: 0.8125rem 1.4375rem;
+  width: 400px;
+  width: 25rem;
+  /*controls the size of the red box */
+  background: #C33;
+  /* -- CSS3 - define rounded corners for the form -- */
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+input,
+textarea {
+  padding: 6px;
+  background: #fff;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #555555;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 1px #ddd solid;
+  /* -- CSS3 Shadow - create a shadow around each input element -- */
+  -webkit-box-shadow: 0px 0px 4px #aaa;
+  -moz-box-shadow: 0px 0px 4px #aaa;
+  box-shadow: 0px 0px 4px #aaa;
+  /* -- CSS3 Transition - define what the transition will be applied to (i.e. the background) -- */
+  -webkit-transition: background 0.3s linear;
+}
+/* controls the size of the text box for message */
+textarea {
+  width: 305px;
+  width: 19.0625rem;
+}
+input:hover,
+textarea:hover {
+  background: #CCC;
+}
+input.button {
+  margin-top: 8px;
+  width: 65px;
+  width: 4.0625rem;
+  color: #ccc;
+  text-transform: uppercase;
+  margin-left: 254px;
+  background-color: #383838;
+  border: 1px solid #ccc;
+}
+input.button:hover {
+  background-color: #FF6B00;
+}
+#content_thankyou {
+  width: 960px;
+  width: 60rem;
+  height: 524px;
+  height: 32.75rem;
+  padding-left: 260px;
+  padding-left: 16.25rem;
+}
+#ty_space {
+  height: 200px;
+  height: 12.5rem;
+}
+#thankyou {
+  border: 1px solid #C33;
+  padding: 15px 20px;
+  padding: 0.9375rem 20px;
+  padding: 15px 1.25rem;
+  padding: 0.9375rem 1.25rem;
+  width: 290px;
+  width: 18.125rem;
+  /*controls the size of the red box */
+  background: #C33;
+  /* -- CSS3 - define rounded corners for the form -- */
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.ty_text {
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+.contact_intro {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+/*--------------------------------------------------------------
+7.0 - Featured content
+--------------------------------------------------------------*/
+#recent-work {
+  padding-left: 100px;
+  padding-left: 6.25rem;
+  padding-right: 100px;
+  padding-right: 6.25rem;
+}
+@media only screen and (max-width: 64em) {
+  #recent-work {
+    padding-left: 50px;
+    padding-left: 3.125rem;
+    padding-right: 50px;
+    padding-right: 3.125rem;
+    padding-top: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
+  }
+}
+@media only screen and (max-width: 40em) {
+  #recent-work {
+    padding-left: 16px;
+    padding-left: 1rem;
+    padding-right: 16px;
+    padding-right: 1rem;
+    padding-top: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
+  }
+}
+#recent-work h4 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #d4d4d4;
+  line-height: .2;
+  margin: 10px 0 20px;
+}
+#recent-work h4 .spformat {
+  background: #fff;
+  padding: 0 10px;
+}
+/*--------------------------------------------------------------
+8.0 - Footer
+--------------------------------------------------------------*/
+#footer {
+  background-color: #222222;
+  color: #ffffff;
+}
+#footer h5,
+#footer h6 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#footer h5 {
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+#footer .row {
+  max-width: 1152px;
+  max-width: 72rem;
+}
+.img-left {
+  border: 2px solid #d4d4d4;
+  margin-right: 16px;
+  margin-right: 1rem;
+  float: left;
+}
+/*.social-media li{
+  list-style-type: none;
+  display: inline;
+  .padding-right(@xs-horizontal);
+}*/
+.categ-descrip {
+  padding-left: 0;
+}
+.instagram {
+  padding-right: 5px;
+  padding-right: 0.3125rem;
+}
+.img-circular {
+  border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+}
+#footer-bottom {
+  clear: both;
+  background: #080808;
+  overflow: hidden;
+}
+#footer-bottom .copyright-credit {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 0;
+}
+/*--------------------------------------------------------------
+9.0 - Galleria styling
+--------------------------------------------------------------*/
+.slideshow,
+.thumbs {
+  margin: 0;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
+.next-thumbs,
+.back-thumbs {
+  display: inline-block;
+  position: absolute;
+  top: 90px;
+  z-index: 9999;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #58585b;
+  line-height: 8px;
+}
+.next-thumbs {
+  right: 8rem;
+  background: url('../images/arrow-right.png') no-repeat right center;
+  padding-right: 2rem;
+}
+.back-thumbs {
+  left: 8rem;
+  background: url('../images/arrow-left.png') no-repeat left center;
+  padding-left: 2rem;
+}
+.thumb-wrapper {
+  display: block !important;
+  margin-bottom: 1rem;
+}
+.thumbs li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+.controls {
+  height: 23px;
+  margin: 0 250px;
+}
+.controls a {
+  color: #58585b;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 9.5px;
+  letter-spacing: 2px;
+  line-height: 8px;
+}
+.ss-controls {
+  float: left;
+}
+.nav-controls {
+  float: right;
+}
+.prev {
+  padding-right: 20px;
+}
+/*--------------------------------------------------------------
+10.0 - Wordpress specific styling
+--------------------------------------------------------------*/
+.top-bar-section .right li .dropdown {
+  right: -4rem;
+}
+.top-bar-section .dropdown {
+  min-width: 140%;
+}
+ul.off-canvas-list {
+  float: left;
+  padding-left: 1rem;
+}
+ul.off-canvas-list li {
+  list-style-type: none;
+}
+img.wp-post-image {
+  margin-bottom: 1rem;
+}
+#content,
+#main {
+  padding: 0;
+  margin: 0;
+}
+#inner-content {
+  margin-left: 5rem;
+}
+.blog-tagline {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
