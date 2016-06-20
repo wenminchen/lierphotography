@@ -123,15 +123,15 @@ function lierphotography_scripts_and_styles() {
     wp_enqueue_script( 'lierphotography-foundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), $theme_version, true );
    
     // adding galleriffic scripts file in the footer
-    wp_enqueue_script( 'lierphotography-galleriffic-js', get_stylesheet_directory_uri() . '/library/js/jquery.galleriffic.js', array( 'jquery' ), '', true );
+    //wp_enqueue_script( 'lierphotography-galleriffic-js', get_stylesheet_directory_uri() . '/library/js/jquery.galleriffic.js', array( 'jquery' ), '', true );
  
     // adding galleriffic opacityrollover js file in the footer
-    wp_enqueue_script( 'lierphotography-opacityrollover-js', get_stylesheet_directory_uri() . '/library/js/jquery.opacityrollover.js', array( 'jquery' ), '', true );
+    //wp_enqueue_script( 'lierphotography-opacityrollover-js', get_stylesheet_directory_uri() . '/library/js/jquery.opacityrollover.js', array( 'jquery' ), '', true );
 
     // register foundation stylesheet
 	wp_enqueue_style( 'lierphotography-foundation-stylesheet', get_stylesheet_directory_uri() . '/foundation/css/foundation.css', array(), '', 'all' );
 
-// register normalize stylesheet
+	// register normalize stylesheet
 	wp_enqueue_style( 'lierphotography-normalize-stylesheet', get_stylesheet_directory_uri() . '/foundation/css/normalize.css', array(), '', 'all' );
 
     // register main stylesheet
@@ -162,9 +162,9 @@ function lierphotography_scripts_and_styles() {
     wp_enqueue_script( 'lierphotography-js', get_template_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), $theme_version, true );
 
     //additional script for gallery pages only
-     if ( is_page('abstract', 'imagined', 'real') ) {
-       wp_enqueue_script('galleriffic-init', get_stylesheet_directory_uri() . '/library/js/galleriffic-init.js', array( 'jquery' ), '', true );
-     }
+    // if ( is_page('Abstract', 'Imagined', 'Real', 'Recent') ) {
+    //   wp_enqueue_script('galleriffic-init', get_stylesheet_directory_uri() . '/library/js/galleriffic-init.js', array( 'jquery' ), '', true );
+    // }
 
   }
 }

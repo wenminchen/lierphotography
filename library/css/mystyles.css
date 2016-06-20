@@ -666,6 +666,19 @@ input.button:hover {
 }
 
 
+//photospace gallery plugin (delete if not use photospace)
+
+.photospace_res .gal_content {
+  float: none;
+  width: 100%;
+}
+
+.photospace_res .thumbs_wrap2 {
+  float: none;
+  width: 100%;
+}
+
+
 
 
 .top-bar-section .right li .dropdown {
