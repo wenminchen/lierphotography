@@ -7,7 +7,7 @@
     <h2 class="screen-reader-text">Image Carousel</h2>
     <div class="row">
       <div class="medium-12 columns">
-        <?php get_template_part( 'parts/content', 'carousel' ); ?>
+        <?php get_template_part( 'partials/content', 'carousel' ); ?>
       </div> 
     </div>
   </section><!-- end carousel -->
@@ -16,7 +16,7 @@
       <section class="show-for-medium-up" id="portfolio">
         <div class="row">
           <h4><span>Portfolio</span></h4> 
-          <?php get_template_part( 'parts/content', 'featured' ); ?>
+          <?php get_template_part( 'partials/content', 'featured' ); ?>
         </div><!-- end outer row -->                   
       </section><!-- end featured section -->
 </div> <!-- end #content -->

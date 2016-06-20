@@ -22,27 +22,10 @@ MENUS & NAVIGATION
 // REGISTER MENUS
 register_nav_menus(
 	array(
-		'top-nav' => __( 'The Top Menu' ),   // main nav in header
 		'main-nav' => __( 'The Main Menu' ),   // main nav in header
 		'footer-links' => __( 'Footer Links' ) // secondary nav in footer
 	)
 );
-
-// THE TOP MENU
-function lierphotography_top_nav() {
-    wp_nav_menu(array(
-    	'container' => false,                           // remove nav container
-    	'container_class' => '',           // class of container (should you choose to use it)
-    	'menu' => __( 'The Top Menu', 'lierphotography' ),  // nav name
-    	'menu_class' => '',         // adding custom nav class
-    	'theme_location' => 'top-nav',                 // where it's located in the theme
-    	'before' => '',                                 // before the menu
-        'after' => '',                                  // after the menu
-        'link_before' => '',                            // before each link
-        'link_after' => '',                             // after each link
-    	'fallback_cb' => 'lierphotography_main_nav_fallback'      // fallback function
-	));
-} /* end lierphotography main nav */
 
 // THE MAIN MENU
 function lierphotography_main_nav() {
