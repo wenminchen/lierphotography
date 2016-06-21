@@ -1,6 +1,6 @@
 
 /*--------------------------------------------------------------
-4.0 - General styles
+1.0 - General styles
 --------------------------------------------------------------*/
 hr {
   border: 1px solid #d4d4d4;
@@ -51,7 +51,7 @@ ul {
   border-radius: 50% 50% 50% 50%;
 }
 /*--------------------------------------------------------------
-5.0 - Header
+2.0 - Header
 --------------------------------------------------------------*/
 .top-bar {
   background-color: #ffffff;
@@ -69,6 +69,7 @@ ul {
 }
 @media (max-width: 68.75em) {
   .top-bar .name {
+    color: #ff6b00;
     padding-left: 16px;
     padding-left: 1rem;
   }
@@ -95,6 +96,10 @@ ul {
 .name a:hover,
 .name a:focus {
   color: #ff8329;
+}
+
+.tab-bar-section a {
+  color: #ff6b00;
 }
 .top-bar-section ul {
   padding-right: 64px;
@@ -163,7 +168,7 @@ ul.off-canvas-list li.active {
   width: 10rem;
 }
 /*--------------------------------------------------------------
-6.0 - Main content
+3.0 - Main content
 --------------------------------------------------------------*/
 @media only screen and (max-width: 40em) {
   #carousel {
@@ -338,7 +343,7 @@ ul.off-canvas-list li.active {
   border-radius: 10px;
 }
 /*--------------------------------------------------------------
-8.0 - Featured content
+4.0 - Featured content
 --------------------------------------------------------------*/
 #portfolio {
   padding-left: 100px;
@@ -380,10 +385,10 @@ ul.off-canvas-list li.active {
   }
 }
 /*--------------------------------------------------------------
-7.0 - Contact page
+5.0 - Contact page
 --------------------------------------------------------------*/
 #content-contact {
-  background: url(../images/contact_img.jpg) no-repeat;
+  background: url(../images/contact_bg.jpg) no-repeat;
   background-position: center top;
 }
 #content-contact .contact button.small,
@@ -506,8 +511,17 @@ input.button:hover {
     font-size: 0.9375rem;
   }
 }
+
+select, textarea, input[type="text"] {
+ color: #fff;
+}
+
+label {
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 /*--------------------------------------------------------------
-8.0 - Footer
+6.0 - Footer
 --------------------------------------------------------------*/
 #footer {
   background-color: #222222;
@@ -573,7 +587,7 @@ input.button:hover {
 }
 
 /*--------------------------------------------------------------
-9.0 - Galleria styling
+7.0 - Galleria styling
 --------------------------------------------------------------*/
 .slideshow,
 .thumbs {
@@ -635,7 +649,7 @@ input.button:hover {
   padding-right: 20px;
 }
 /*--------------------------------------------------------------
-10.0 - Wordpress specific styling
+8.0 - Wordpress specific styling
 --------------------------------------------------------------*/
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
