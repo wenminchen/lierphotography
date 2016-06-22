@@ -2,10 +2,25 @@
 /*--------------------------------------------------------------
 1.0 - General styles
 --------------------------------------------------------------*/
+body {
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 hr {
   border: 1px solid #d4d4d4;
   clear: both;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #696969;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 h1 {
   font-size: 36px;
   font-size: 2.25rem;
@@ -39,16 +54,19 @@ p {
 ul {
   list-style: none;
 }
-.hidden-header {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6 & 7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
+
 .img-circular {
   -webkit-border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
   border-radius: 50% 50% 50% 50%;
+}
+
+a {
+  color: #ff6b00;
+}
+a:hover,
+a:focus {
+  color: #595958;
 }
 /*--------------------------------------------------------------
 2.0 - Header
@@ -385,26 +403,13 @@ ul.off-canvas-list li.active {
   }
 }
 /*--------------------------------------------------------------
-5.0 - Contact page
+5.0 - Contact page (modified for wordpress)
 --------------------------------------------------------------*/
 #content-contact {
   background: url(../images/contact_bg.jpg) no-repeat;
   background-position: center top;
 }
-#content-contact .contact button.small,
-#content-contact .contact .button.small {
-  padding: 5px 5px;
-  padding: 0.3125rem 5px;
-  padding: 5px 0.3125rem;
-  padding: 0.3125rem 0.3125rem;
-}
-#content-contact .contact-intro {
-  font-size: 13px;
-  font-size: 0.8125rem;
-  color: #ffffff;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-}
+
 @media only screen and (min-width: 40.063em) and (max-width: 70em) {
   #content-contact {
     background-size: 90%;
@@ -421,27 +426,38 @@ ul.off-canvas-list li.active {
     padding-bottom: 54.6875%;
   }
 }
-form {
+
+.ninja-forms-required-items {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #ffffff;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+.ninja-forms-form-wrap {
   background: #cc3333;
   border: 1px solid #cc3333;
-  padding: 13px 20px;
-  padding: 0.8125rem 20px;
-  padding: 13px 1.25rem;
-  padding: 0.8125rem 1.25rem;
-  /* -- CSS3 - define rounded corners for the form -- */
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
   border-radius: 20px;
-  margin-top: 15px;
-  margin-top: 0.9375rem;
-  margin-bottom: 10px;
-  margin-bottom: 0.625rem;
+  padding: 15px 20px 0 15px;
+  margin-bottom: 0;
 }
+
 label {
   color: #ffffff;
   font-size: 13px;
   font-size: 0.8125rem;
 }
+
+input[type="submit"] {
+  padding: 5px 5px;
+  background-color: #383838;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -450,7 +466,6 @@ textarea {
   font-size: 12px;
   font-size: 0.75rem;
   color: #595958;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 6px;
   /* -- CSS3 Shadow - create a shadow around each input element -- */
   -webkit-box-shadow: 0 0 4px #aaa;
@@ -480,44 +495,6 @@ input.button:hover {
 }
 .anti-spam {
   display: none;
-}
-.thank-you {
-  background: #cc3333;
-  border: 1px solid #cc3333;
-  margin: 200px auto;
-  padding: 20px 15px 0 15px;
-  width: 320px;
-  width: 20rem;
-  /*controls the size of the red box */
-  /* -- CSS3 - define rounded corners for the form -- */
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-}
-.thank-you p {
-  font-size: 20px;
-  font-size: 1.25rem;
-  color: #ffffff;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 0.5;
-}
-@media only screen and (max-width: 40em) {
-  .thank-you {
-    width: 245px;
-    width: 15.3125rem;
-  }
-  .thank-you p {
-    font-size: 15px;
-    font-size: 0.9375rem;
-  }
-}
-
-select, textarea, input[type="text"] {
- color: #fff;
-}
-
-label {
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /*--------------------------------------------------------------

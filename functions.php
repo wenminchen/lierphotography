@@ -23,7 +23,7 @@ MENUS & NAVIGATION
 register_nav_menus(
 	array(
 		'main-nav' => __( 'The Main Menu' ),   // main nav in header
-		'footer-links' => __( 'Footer Links' ) // secondary nav in footer
+		//'footer-links' => __( 'Footer Links' ) // secondary nav in footer
 	)
 );
 
@@ -44,7 +44,7 @@ function lierphotography_main_nav() {
 } /* end lierphotography main nav */
 
 // THE FOOTER MENU
-function lierphotography_footer_links() {
+/*function lierphotography_footer_links() {
     wp_nav_menu(array(
     	'container' => '',                              // remove nav container
     	'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
@@ -57,7 +57,7 @@ function lierphotography_footer_links() {
         'link_after' => '',                             // after each link
         'depth' => 0,                                   // limit the depth of the nav
     	'fallback_cb' => 'lierphotography_footer_links_fallback'  // fallback function
-	));
+	));*/
 } /* end lierphotography footer link */
 
 // HEADER FALLBACK MENU
@@ -94,7 +94,7 @@ function lierphotography_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
-	register_sidebar(array(
+	/*register_sidebar(array(
 		'id' => 'offcanvas',
 		'name' => __('Offcanvas', 'lierphotography'),
 		'description' => __('The offcanvas sidebar.', 'lierphotography'),
@@ -102,7 +102,7 @@ function lierphotography_register_sidebars() {
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
-	));
+	));*/
 
 	register_sidebar( array(
 		'id'            => 'footer-one',
