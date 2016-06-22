@@ -57,8 +57,8 @@ function lierphotography_main_nav() {
         'link_after' => '',                             // after each link
         'depth' => 0,                                   // limit the depth of the nav
     	'fallback_cb' => 'lierphotography_footer_links_fallback'  // fallback function
-	));*/
-} /* end lierphotography footer link */
+	));
+}*/ /* end lierphotography footer link */
 
 // HEADER FALLBACK MENU
 function lierphotography_main_nav_fallback() {
