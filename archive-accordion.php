@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 			
-			<div id="content">
+			<div id="main" class="site-main">
 			
 				<div id="inner-content" class="row clearfix">
 					
-				    <div id="main" class="large-8 medium-8 columns first clearfix" role="main">
+				    <div class="large-8 medium-8 columns first clearfix">
 				
 						<h1 class="page-title"><?php post_type_archive_title(); ?></h1>
 						<dl class="accordion" data-accordion>
@@ -39,12 +39,12 @@
 					
 					    <?php endif; ?>
 			
-    				</div> <!-- end #main -->
+    				</div>
     				
     				<?php get_sidebar(); ?>
                     
                 </div> <!-- end #inner-content -->
                 
-			</div> <!-- end #content -->
+			</div> <!-- end #main -->
 
 <?php get_footer(); ?>

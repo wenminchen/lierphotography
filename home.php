@@ -2,23 +2,24 @@
 			
 <div id="main" class="site-main">
 	<h1 class="screen-reader-text">Main Content</h1>
-
+	
 	<section id="blog">
-		<div id="inner-content" class="row clearfix">
-			<h1>Wanderlust<br />
-			<span class="blog-tagline">Musings on photography, travel, and sustainable development.</span></h1>
-
-	    	<div id="main" class="medium-8 columns clearfix" role="main">
 		
-		    <?php get_template_part( 'partials/loop', 'archive' ); ?>
+		<div id="inner-content" class="row clearfix">
+			<h1 class="blog-h1">Wanderlust... </h1>
+			<p class="blog-tagline">Musings on photography, travel, and sustainable development</p>
 
+	    	<div class="medium-8 columns clearfix">		
+		    <?php get_template_part( 'partials/loop', 'archive' ); ?>
 	    	</div> <!-- end #main -->
 
 	    	<div class="hide-for-small-only">
 	    		<?php get_sidebar(); ?>
-	    	</div>
+	    	</div>	    	
 	    </div> <!-- end #inner-content -->
-	</section>
+	    
+	</section> <!-- end #blog -->
+
 </div> <!-- end #main -->
 
 <?php get_footer(); ?>

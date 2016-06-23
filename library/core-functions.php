@@ -144,7 +144,7 @@ function lierphotography_scripts_and_styles() {
 	wp_enqueue_style( 'lierphotography-font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
 
     //Add google fonts
-    wp_enqueue_style( 'lierphotography-google-fonts', 'https://fonts.googleapis.com/css?family=Droid+Sans');
+    wp_enqueue_style( 'lierphotography-google-fonts', 'https://fonts.googleapis.com/css?family=Droid+Sans|Shadows+Into+Light');
 
     // load HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     wp_enqueue_script( 'lierphotography-htm5shivjs', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js');

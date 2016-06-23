@@ -360,6 +360,7 @@ ul.off-canvas-list li.active {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
+
 /*--------------------------------------------------------------
 4.0 - Featured content
 --------------------------------------------------------------*/
@@ -524,7 +525,7 @@ input.button:hover {
     padding-bottom: 0;
   }
 }
-#footer .img-left {
+.img-left {
   border: 2px solid #d4d4d4;
   float: left;
   margin-right: 16px;
@@ -696,7 +697,18 @@ img.wp-post-image {
 #inner-content {
   margin-left: 5rem;
 }
+.blog-h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 45px; 
+  color: #27bec7;
+  margin: 0;
+}
 .blog-tagline {
-  font-size: 18px;
-  font-size: 1.125rem;
+  color: #696969;
+  font-size: 1.5rem;
+  font-family: 'Shadows Into Light', cursive;
+  padding-left: 100px;
+}
+ul.pagination li.current a, ul.pagination li.current button {
+  background: #27bec7;
 }

@@ -1,20 +1,20 @@
 <?php get_header(); ?>
 			
-			<div id="content">
+			<div id="main" class="site-main">
 			
 				<div id="inner-content" class="row">
 			
-				    <div id="main" class="large-8 medium-8 columns" role="main">
+				    <div class="large-8 medium-8 columns">
 						
 						<!-- To see additional archive styles, visit the /partials directory -->
 					    <?php get_template_part( 'partials/loop', 'archive' ); ?>
 								
-				    </div> <!-- end #main -->
+				    </div>
     
 				    <?php get_sidebar(); ?>
 				    
 				</div> <!-- end #inner-content -->
     
-			</div> <!-- end #content -->
+			</div> <!-- end #main -->
 
 <?php get_footer(); ?>

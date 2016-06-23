@@ -30,7 +30,7 @@
 		<![endif]-->
 		<meta name="msapplication-TileColor" content="#f01d4f">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-		 <meta name="theme-color" content="#121212">
+		<meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -47,14 +47,7 @@
 				<div id="container">
 					<header class="header" role="banner">
 						<h1 class="screen-reader-text">Main Navigation</h1>
-							
-						 <!-- This navs will be applied to the topbar, above all content 
-							  To see additional nav styles, visit the /partials directory -->
-						 <?php //get_template_part( 'partials/nav', 'top-offcanvas' ); ?>
 				
-							 <!-- This navs will be applied to the main, under the logo 
-								  To see additional nav styles, visit the /partials directory -->
-								  
 							 <?php get_template_part( 'partials/nav', 'main-offcanvas' ); ?>
 	
 					</header> <!-- end .header -->

@@ -1,10 +1,10 @@
 ?php get_header(); ?>
 			
-			<div id="content">
-				<h1 class="screen-reader-text">Main Content</h1>
-					
-				<?php get_template_part( 'partials/loop', 'page' ); ?>
-					    					
-			</div> <!-- end #content -->
+	<div id="main" class="site-main">
+		<h1 class="screen-reader-text">Main Content</h1>
+		<div id="inner-content" class="clearfix">				
+			<?php get_template_part( 'partials/loop', 'page' ); ?>
+		</div>			    					
+	</div> <!-- end #main -->
 
 <?php get_footer(); ?>

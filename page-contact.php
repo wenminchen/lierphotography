@@ -12,9 +12,7 @@ Template Name: contact page
   		<h2 class="screen-reader-text">Contact Form</h2>
     	<div class="row">
   	  		<div class="large-5 large-offset-3 medium-5 medium-offset-3 small-10 small-offset-1 columns">
-
   	  			<?php get_template_part( 'partials/loop', 'page-contact' ); ?>
-
   	  		</div>
   	  	</div>
   	</section>

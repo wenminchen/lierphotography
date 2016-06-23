@@ -15,11 +15,11 @@ taxonomy-shoes.php
 
 <?php get_header(); ?>
 			
-			<div id="content">
+			<div id="main" class="site-main">
 			
 				<div id="inner-content" class="row">
 			
-				    <div id="main" class="large-8 medium-8 columns first" role="main">
+				    <div class="large-8 medium-8 columns first">
 				
 					    <h1 class="archive-title h2"><span><?php _e("Posts Categorized:", "lierphotography"); ?></span> <?php single_cat_title(); ?></h1>
 
@@ -64,12 +64,12 @@ taxonomy-shoes.php
 					
 					    <?php endif; ?>
 			
-				    </div> <!-- end #main -->
+				    </div>
     
 				    <?php get_sidebar(); ?>
 				    
 				</div> <!-- end #inner-content -->
     
-			</div> <!-- end #content -->
+			</div> <!-- end #main -->
 
 <?php get_footer(); ?>

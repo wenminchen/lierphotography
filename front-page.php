@@ -2,6 +2,7 @@
       
 <div id="main" class="site-main">
   <h1 class="screen-reader-text">Main Content</h1>
+
   <!-- homepage image carousel -->
   <section id="carousel">
     <h2 class="screen-reader-text">Image Carousel</h2>
@@ -19,6 +20,7 @@
           <?php get_template_part( 'partials/content', 'featured' ); ?>
         </div><!-- end outer row -->                   
       </section><!-- end featured section -->
-</div> <!-- end #content -->
+
+</div> <!-- end #main -->
 
 <?php get_footer(); ?>
