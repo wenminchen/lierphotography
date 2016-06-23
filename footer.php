@@ -1,13 +1,13 @@
 					<footer id="footer" class="footer" role="contentinfo">
 						<h1 class="screen-reader-text">Footer</h1>
 					    <div class="row">
-							<div class="medium-5 columns" id="footer-one">
+							<div class="medium-5 columns about-footer" id="footer-one">
 							  <?php dynamic_sidebar('footer-one'); ?>
 							</div><!-- /footer-one -->
-							<div class="medium-2 medium-offset-1 columns" id="footer-two">
+							<div class="medium-2 medium-offset-1 columns portfolio-footer" id="footer-two">
 							  <?php dynamic_sidebar('footer-two'); ?>
 							</div><!-- /footer-two -->
-							<div class="medium-3 medium-offset-1 columns" id="footer-three">
+							<div class="medium-3 medium-offset-1 columns recent-work-footer" id="footer-three">
 							  <?php dynamic_sidebar('footer-three'); ?>
 							</div><!-- /footer-three -->
 						</div><!-- end row -->
