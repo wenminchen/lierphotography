@@ -19,7 +19,7 @@ Template Name: Portfolio
 			"content-recent"
 		<?php endif; ?>
 	>
-		<div id="inner-content gallery" class="clearfix">			    		
+		<div id="inner-content gallery" class="clearfix">		    		
 		    <?php get_template_part( 'partials/loop', 'page-portfolio' ); ?>
 		</div>
 	</section><!-- end #portfolio-page -->	    					
