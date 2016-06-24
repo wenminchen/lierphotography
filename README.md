@@ -8,9 +8,11 @@ Lierphotography is built using the Zurb Foundation framework (specifically Found
 
 ### Homepage Carousel
 
-### Individual portfolio carousel with thumbnail and control
+### Individual portfolio page carousel with thumbnails and controls
 
 ### Pop up windows (a.k.a reveal modals)
+
+### Dropdown menu
 
 ### Featured Images
 Posts and pages can have Featured Images.
