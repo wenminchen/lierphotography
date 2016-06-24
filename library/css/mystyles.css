@@ -96,8 +96,10 @@ a:focus {
   left: 5px;
   line-height: normal;
   padding: 15px 23px 14px;
+  padding: 0.9375rem 1.4375rem 0.875rem;
   text-decoration: none;
   top: 5px;
+  top: 0.3125rem;
   width: auto;
   z-index: 100000;
 }
@@ -113,8 +115,8 @@ a:focus {
 }
 .top-bar .name {
   padding-top: 5px;
+  padding-top: 0.3125rem;
   color: #ff6b00;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
   padding-left: 64px;
@@ -142,6 +144,7 @@ a:focus {
   font-size: 18px;
   font-size: 1.125rem;
   padding-top: 8px;
+  padding-top: 0.5rem;
 }
 .name a {
   color: #ff6b00;
@@ -206,6 +209,7 @@ a:focus {
 
 //the next two are from wp portion - need to look over
 .top-bar-section .right li .dropdown {
+  right: -64px;
   right: -4rem;
 }
 .top-bar-section .dropdown {
@@ -214,6 +218,7 @@ a:focus {
 
 ul.off-canvas-list {
   float: left;
+  padding-left: 16px;
   padding-left: 1rem;
 }
 ul.off-canvas-list li {
@@ -227,17 +232,17 @@ ul.off-canvas-list li a {
   color: #7d7d7b;
   font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 ul.off-canvas-list li.active {
   background-color: #222222;
 }
 
-
 .move-right > .inner-wrap {
   transform: translate3d(10rem, 0, 0);
 }
+
 .left-off-canvas-menu {
   width: 160px;
-  width: 10rem;
 }
 
 /*--------------------------------------------------------------
@@ -246,12 +251,15 @@ ul.off-canvas-list li.active {
 @media only screen and (max-width: 40em) {
   #carousel {
     padding-top: 10px;
+    padding-top: 0.625rem;
   }
 }
+
 .orbit-img {
   display: block;
   margin: 0 auto;
 }
+
 @media only screen and (min-width: 64.063em) {
   #content-abstract {
     background: url(../images/abstract-backg.png) no-repeat;
@@ -262,7 +270,6 @@ ul.off-canvas-list li.active {
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     width: 1030px;
-    width: 64.375rem;
   }
   #content-imagined {
     background: url(../images/imagined-backg.png) no-repeat;
@@ -273,7 +280,6 @@ ul.off-canvas-list li.active {
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     width: 1030px;
-    width: 64.375rem;
   }
   #content-real {
     background: url(../images/real-backg.png) no-repeat;
@@ -284,7 +290,6 @@ ul.off-canvas-list li.active {
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     width: 1030px;
-    width: 64.375rem;
   }
   #content-recent {
     background: url(../images/recent-backg.png) no-repeat;
@@ -295,7 +300,6 @@ ul.off-canvas-list li.active {
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     width: 1030px;
-    width: 64.375rem;
   }
 }
 
@@ -304,46 +308,52 @@ ul.off-canvas-list li.active {
   padding: 0;
   margin: 0;
 }
+
 #inner-content {
   margin-left: 0;
 }
 
  @media screen and (min-width: 40em) {
     #inner-content {
+      margin-left: 64px;
       margin-left: 4rem;
     }
 }
 
-.abstract-sm,
-.imagined-sm,
-.real-sm {
-  padding-bottom: 5px;
-}
 .gallery {
   position: relative;
 }
+
 .galleryTitle {
   position: absolute;
   left: 15px;
+  left: 0.9375rem;
   top: -5px;
+  top: -0.3125rem;
 }
 
 img.wp-post-image {
+  margin-bottom: 16px;
   margin-bottom: 1rem;
 }
 
 .blog-h1 {
   font-family: 'Shadows Into Light', cursive;
   font-size: 45px; 
+  font-size: 2.8125rem;
   color: #27bec7;
   margin: 0;
 }
+
 .blog-tagline {
   color: #696969;
+  font-size: 24px;
   font-size: 1.5rem;
   font-family: 'Shadows Into Light', cursive;
   padding-left: 100px;
+  padding-left: 6.25rem;
 }
+
 ul.pagination li.current a, ul.pagination li.current button {
   background: #27bec7;
 }
@@ -577,6 +587,7 @@ input.button:hover {
 7.0 - Portfolio pages styling
 --------------------------------------------------------------*/
 //photospace gallery plugin 
+
 .photospace_res .gal_content {
   float: none;
   width: 100%;
@@ -589,10 +600,16 @@ input.button:hover {
 
 .photospace_res .slideshow-container {
   margin: 0 15px;
+  margin: 0 0.9375rem;
 }
 
 .photospace_res a.pageLink {
   border: none;
+}
+
+.photospace_res {
+  margin-top: 10px; 
+  margin-top: 0.625rem;
 }
 
 .photospace_res .thumnail_row a.prev,
@@ -603,32 +620,43 @@ input.button:hover {
 
 .photospace_res .thumnail_row a.prev {
   background-image: url('../images/arrow-left.png');
+  left: -56px;
   left: -3.5rem;
 }
 .photospace_res .thumnail_row a.next {
   background-image: url('../images/arrow-right.png');
+  right: -56px;
   right: -3.5rem;
 }
 
 @media screen and (max-width: 63.9375em) {
   .photospace_res .thumbs_wrap2{
     display: none;
-}
+  }
 }
 
 .photospace_res .controls {
   height: 23px;
   margin: 0 250px;
+  margin: 0 15.625rem;
 }
 
 .photospace_res .controls a {
   color: #58585b;
   font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 9.5px;
+  font-size: 0.59375rem;
   letter-spacing: 2px;
-  line-height: 8px;
+  letter-spacing: 0.125rem;
 }
+
 .photospace_res .ss-controls {
   float: left;
 }
+
+.portfolio-category {
+  padding: 55px 0 0 25px;
+  padding: 3.4375rem 0 0 1.5625rem;
+}
+
 
