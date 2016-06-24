@@ -36,7 +36,7 @@
 			
 				    <article id="post-not-found" class="hentry clearfix">
 				    	<header class="article-header">
-				    		<h1>Sorry, No Results.</h1>
+				    		<h3>Sorry, No Results.</h3>
 				    	</header>
 				    	<section class="entry-content">
 				    		<p>Try your search again.</p>

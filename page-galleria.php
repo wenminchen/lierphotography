@@ -4,6 +4,7 @@ Template Name: gallery page
 */
 ?>
 
+//NOT USED. A plugin was used instead for the portfolio pages
 <?php get_header(); ?>
 			
 <div id="content">

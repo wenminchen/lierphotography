@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 1.0 - General styles
 --------------------------------------------------------------*/
@@ -7,8 +6,8 @@ body {
 }
 
 hr {
-  border: 1px solid #d4d4d4;
   clear: both;
+  border: 1px solid #d4d4d4;
 }
 
 h1,
@@ -18,39 +17,44 @@ h4,
 h5,
 h6 {
   color: #696969;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1 {
   font-size: 36px;
   font-size: 2.25rem;
 }
+
 h2 {
   font-size: 30px;
   font-size: 1.875rem;
 }
+
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
 }
+
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
 }
+
 h5 {
   font-size: 15px;
   font-size: 0.9375rem;
 }
+
 h6 {
   font-size: 12px;
   font-size: 0.75rem;
 }
+
 p {
   color: #7d7d7b;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
 }
+
 ul {
   list-style: none;
 }
@@ -64,10 +68,41 @@ ul {
 a {
   color: #ff6b00;
 }
+
 a:hover,
 a:focus {
   color: #595958;
 }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+
 /*--------------------------------------------------------------
 2.0 - Header
 --------------------------------------------------------------*/
@@ -168,6 +203,23 @@ a:focus {
 .top-bar-section .has-dropdown > a:after {
   border-color: #7d7d7b transparent transparent;
 }
+
+//the next two are from wp portion - need to look over
+.top-bar-section .right li .dropdown {
+  right: -4rem;
+}
+.top-bar-section .dropdown {
+  min-width: 100%;
+}
+
+ul.off-canvas-list {
+  float: left;
+  padding-left: 1rem;
+}
+ul.off-canvas-list li {
+  list-style-type: none;
+}
+
 ul.off-canvas-list li a {
   display: block;
   font-size: 15px;
@@ -178,6 +230,8 @@ ul.off-canvas-list li a {
 ul.off-canvas-list li.active {
   background-color: #222222;
 }
+
+
 .move-right > .inner-wrap {
   transform: translate3d(10rem, 0, 0);
 }
@@ -185,6 +239,7 @@ ul.off-canvas-list li.active {
   width: 160px;
   width: 10rem;
 }
+
 /*--------------------------------------------------------------
 3.0 - Main content
 --------------------------------------------------------------*/
@@ -243,6 +298,16 @@ ul.off-canvas-list li.active {
     width: 64.375rem;
   }
 }
+
+#content,
+#main {
+  padding: 0;
+  margin: 0;
+}
+#inner-content {
+  margin-left: 5rem;
+}
+
 .abstract-sm,
 .imagined-sm,
 .real-sm {
@@ -361,8 +426,27 @@ ul.off-canvas-list li.active {
   border-radius: 10px;
 }
 
+img.wp-post-image {
+  margin-bottom: 1rem;
+}
+
+.blog-h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 45px; 
+  color: #27bec7;
+  margin: 0;
+}
+.blog-tagline {
+  color: #696969;
+  font-size: 1.5rem;
+  font-family: 'Shadows Into Light', cursive;
+  padding-left: 100px;
+}
+ul.pagination li.current a, ul.pagination li.current button {
+  background: #27bec7;
+}
 /*--------------------------------------------------------------
-4.0 - Featured content
+4.0 - Featured content (homepage)
 --------------------------------------------------------------*/
 #portfolio {
   padding-left: 100px;
@@ -370,37 +454,36 @@ ul.off-canvas-list li.active {
   padding-right: 100px;
   padding-right: 6.25rem;
 }
+
 #portfolio a {
   color: #7d7d7b;
 }
+
 #portfolio h4 {
-  width: 100%;
-  text-align: center;
   border-bottom: 2px solid #d4d4d4;
+  color: #7d7d7b;
   line-height: 0.2;
   margin: 10px 0 20px;
-  text-transform: uppercase;
-  color: #7d7d7b;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0.625rem 1.25rem;
+  text-align: center;
+  text-transform: uppercase;  
+  width: 100%;
 }
+
 #portfolio h4 span {
   background: #ffffff;
   padding: 0 10px;
   padding: 0 0.625rem;
 }
+
 #portfolio h5 {
   font-weight: bold;
 }
+
 @media only screen and (max-width: 64em) {
   #portfolio {
-    padding-left: 50px;
-    padding-left: 3.125rem;
-    padding-right: 50px;
-    padding-right: 3.125rem;
-    padding-top: 10px;
-    padding-top: 0.625rem;
-    padding-bottom: 10px;
-    padding-bottom: 0.625rem;
+    padding: 10px 50px;
+    padding: 0.625rem 3.125rem;
   }
 }
 /*--------------------------------------------------------------
@@ -429,11 +512,12 @@ ul.off-canvas-list li.active {
 }
 
 .ninja-forms-required-items {
+  color: #ffffff;
   font-size: 13px;
   font-size: 0.8125rem;
-  color: #ffffff;
   line-height: 1.5;
   padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
 }
 
 .ninja-forms-form-wrap {
@@ -441,6 +525,7 @@ ul.off-canvas-list li.active {
   border: 1px solid #cc3333;
   border-radius: 20px;
   padding: 15px 20px 0 15px;
+  padding: 0.9375rem 1.25rem 0 0.9375rem;
   margin-bottom: 0;
 }
 
@@ -451,11 +536,13 @@ label {
 }
 
 input[type="submit"] {
-  padding: 5px 5px;
   background-color: #383838;
   border: 1px solid #ccc;
   color: #ccc;
   font-size: 14px;
+  font-size: 0.825rem;
+  padding: 5px 5px;
+  padding: 0.3125rem 0.3125rem;
   text-transform: uppercase;
 }
 
@@ -464,10 +551,11 @@ input[type="email"],
 textarea {
   background: #ffffff;
   border: 1px #d4d4d4 solid;
+  color: #595958;
   font-size: 12px;
   font-size: 0.75rem;
-  color: #595958;
   padding: 6px;
+  padding: 0.375rem;
   /* -- CSS3 Shadow - create a shadow around each input element -- */
   -webkit-box-shadow: 0 0 4px #aaa;
   -moz-box-shadow: 0 0 4px #aaa;
@@ -475,25 +563,27 @@ textarea {
   /* -- CSS3 Transition - define what the transition will be applied to (i.e. the background) -- */
   -webkit-transition: background 0.3s linear;
 }
+
 input[type="text"]:hover,
 input[type="email"]:hover,
 textarea:hover {
   background: #cccccc;
 }
+
 input.button {
   background-color: #383838;
   border: 1px solid #cccccc;
   color: #cccccc;
-  margin-top: 5px;
-  margin-top: 0.3125rem;
-  margin-bottom: 5px;
-  margin-bottom: 0.3125rem;
+  margin: 5px 0;
+  margin: 0.3125rem 0;
   text-transform: uppercase;
 }
+
 input.button:hover {
   background-color: #383838;
   color: #ff6b00;
 }
+
 .anti-spam {
   display: none;
 }
@@ -504,20 +594,26 @@ input.button:hover {
 #footer {
   background-color: #222222;
   padding-top: 15px;
+  padding-top: 0.9375rem;
 }
+
 #footer h5,
 #footer h6 {
   color: #ffffff;
   text-transform: uppercase;
 }
+
 #footer .categ-img {
   padding-bottom: 7px;
+  padding-bottom: 0.4375rem;
 }
+
 #footer .categ-descrip-t {
   padding-top: 15px;
   padding-top: 0.9375rem;
   padding-bottom: 0;
 }
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #footer .categ-descrip-t {
     padding-top: 4px;
@@ -525,12 +621,14 @@ input.button:hover {
     padding-bottom: 0;
   }
 }
+
 .img-left {
   border: 2px solid #d4d4d4;
   float: left;
   margin-right: 16px;
   margin-right: 1rem;
 }
+
 .has-tip {
   border-bottom: none;
   color: #7d7d7b;
@@ -538,26 +636,31 @@ input.button:hover {
   font-weight: none;
   text-transform: none;
 }
+
 .recent-work a,
 .portfolio-footer a {
   color: #ffffff;
 }
+
 #portfolio a:hover,
 .portfolio-footer a:hover,
 .has-tip:hover,
 .recent-work a:hover {
   color: #ff6b00;
 }
+
 @media only screen and (max-width: 40em) {
   .reveal-modal {
     min-height: 100px;
   }
 }
+
 #footer-bottom {
   background: #080808;
   clear: both;
   overflow: hidden;
 }
+
 #footer-bottom .copyright-credit {
   padding-top: 20px;
   padding-top: 1.25rem;
@@ -569,101 +672,9 @@ input.button:hover {
 }
 
 /*--------------------------------------------------------------
-7.0 - Galleria styling
+7.0 - Portfolio pages styling
 --------------------------------------------------------------*/
-.slideshow,
-.thumbs {
-  margin: 0;
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-}
-.next-thumbs,
-.back-thumbs {
-  display: inline-block;
-  position: absolute;
-  top: 90px;
-  z-index: 9999;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #58585b;
-  line-height: 8px;
-}
-.next-thumbs {
-  right: 8rem;
-  background: url('../images/arrow-right.png') no-repeat right center;
-  padding-right: 2rem;
-}
-.back-thumbs {
-  left: 8rem;
-  background: url('../images/arrow-left.png') no-repeat left center;
-  padding-left: 2rem;
-}
-.thumb-wrapper {
-  display: block !important;
-  margin-bottom: 1rem;
-}
-.thumbs li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 auto;
-}
-.controls {
-  height: 23px;
-  margin: 0 250px;
-}
-.controls a {
-  color: #58585b;
-  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 9.5px;
-  letter-spacing: 2px;
-  line-height: 8px;
-}
-.ss-controls {
-  float: left;
-}
-.nav-controls {
-  float: right;
-}
-.prev {
-  padding-right: 20px;
-}
-/*--------------------------------------------------------------
-8.0 - Wordpress specific styling
---------------------------------------------------------------*/
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-}
-
-
-//photospace gallery plugin (delete if not use photospace)
-
+//photospace gallery plugin 
 .photospace_res .gal_content {
   float: none;
   width: 100%;
@@ -674,45 +685,48 @@ input.button:hover {
   width: 100%;
 }
 
-
-
-
-.top-bar-section .right li .dropdown {
-  right: -4rem;
+.photospace_res .slideshow-container {
+  margin: 0 15px;
 }
-.top-bar-section .dropdown {
-  min-width: 140%;
+
+.photospace_res a.pageLink {
+  border: none;
 }
-ul.off-canvas-list {
+
+.photospace_res .thumnail_row a.prev,
+.photospace_res .thumnail_row a.next {
+  position: absolute;
+  z-index: 999999;
+}
+
+.photospace_res .thumnail_row a.prev {
+  background-image: url('../images/arrow-left.png');
+  left: -3.5rem;
+}
+.photospace_res .thumnail_row a.next {
+  background-image: url('../images/arrow-right.png');
+  right: -3.5rem;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .photospace_res .thumbs_wrap2{
+    display: none;
+}
+}
+
+.photospace_res .controls {
+  height: 23px;
+  margin: 0 250px;
+}
+
+.photospace_res .controls a {
+  color: #58585b;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 9.5px;
+  letter-spacing: 2px;
+  line-height: 8px;
+}
+.photospace_res .ss-controls {
   float: left;
-  padding-left: 1rem;
 }
-ul.off-canvas-list li {
-  list-style-type: none;
-}
-img.wp-post-image {
-  margin-bottom: 1rem;
-}
-#content,
-#main {
-  padding: 0;
-  margin: 0;
-}
-#inner-content {
-  margin-left: 5rem;
-}
-.blog-h1 {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 45px; 
-  color: #27bec7;
-  margin: 0;
-}
-.blog-tagline {
-  color: #696969;
-  font-size: 1.5rem;
-  font-family: 'Shadows Into Light', cursive;
-  padding-left: 100px;
-}
-ul.pagination li.current a, ul.pagination li.current button {
-  background: #27bec7;
-}
+
