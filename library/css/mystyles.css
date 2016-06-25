@@ -78,7 +78,9 @@ a:focus {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
   height: 1px;
+  height: 0.0625rem;
   width: 1px;
+  width: 0.0625rem;
   overflow: hidden;
 }
 
@@ -94,6 +96,7 @@ a:focus {
   font-weight: bold;
   height: auto;
   left: 5px;
+  left: 0.3125rem;
   line-height: normal;
   padding: 15px 23px 14px;
   padding: 0.9375rem 1.4375rem 0.875rem;
@@ -138,6 +141,7 @@ a:focus {
 @media (max-width: 64em) {
   .top-bar {
     height: 35px;
+    height: 2.1875rem;
   }
 }
 .name {
@@ -243,6 +247,7 @@ ul.off-canvas-list li.active {
 
 .left-off-canvas-menu {
   width: 160px;
+  width: 10rem;
 }
 
 /*--------------------------------------------------------------
@@ -270,6 +275,7 @@ ul.off-canvas-list li.active {
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     width: 1030px;
+    width: 64.375rem;
   }
   #content-imagined {
     background: url(../images/imagined-backg.png) no-repeat;
@@ -280,6 +286,7 @@ ul.off-canvas-list li.active {
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     width: 1030px;
+    width: 64.375rem;
   }
   #content-real {
     background: url(../images/real-backg.png) no-repeat;
@@ -290,6 +297,7 @@ ul.off-canvas-list li.active {
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     width: 1030px;
+    width: 64.375rem;
   }
   #content-recent {
     background: url(../images/recent-backg.png) no-repeat;
@@ -300,6 +308,7 @@ ul.off-canvas-list li.active {
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     width: 1030px;
+    width: 64.375rem;
   }
 }
 
@@ -564,6 +573,7 @@ input.button:hover {
 @media only screen and (max-width: 40em) {
   .reveal-modal {
     min-height: 100px;
+    min-height: 6.25rem;
   }
 }
 
@@ -637,6 +647,7 @@ input.button:hover {
 
 .photospace_res .controls {
   height: 23px;
+  height: 1.4375rem;
   margin: 0 250px;
   margin: 0 15.625rem;
 }
